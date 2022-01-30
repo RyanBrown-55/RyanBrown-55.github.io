@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/sampleJS.js"></script>
+    <title>Sandbox</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="cluster.html">Clustering Tool</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="class.html">Class Assignments</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-3">
+        <center>
+            <h3 id="changeMe">
+                Multilytics
+                <small class="text-muted">where multifamily investment meets artificial intelligence</small>
+            </h3>
+
+        </center>
+    </div>
+
+    <div class="container-fluid" style="background-color: #317df6">
+        <div class="row">
+            <div class="m-5">
+                <center>
+                    <div class="h3" id='goAway' style="color: white;">
+                        Identify high growth, stable markets for multifamily investment
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="p-3">
+                <center>
+                    <div id='time'>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <center>
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="button" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1" onclick="minuteOfTheDay()">Time</label>
+
+            <input type="button" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2" onclick="goodBye()">Disappear</label>
+
+            <input type="button" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3" onclick="howdy()">Reappear</label>
+
+            <input type="button" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3" onclick="changeTitle()">Change Title</label>
+        </div>
+
+    </center>
+</body>
+
+</html>
