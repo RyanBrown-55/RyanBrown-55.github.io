@@ -1,0 +1,20 @@
+p::first-letter {
+    /* color: #000000; */
+    float: left;
+    font-size: 3em;
+    margin: 0 .1em 0 0;
+    line-height: 0.85;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
+       display: none;
+    }
+ }
+
+ #map {
+   height: 400px;
+   /* The height is 400 pixels */
+   width: 100%;
+   /* The width is the width of the web page */
+ }
