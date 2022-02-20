@@ -1,12 +1,14 @@
 p::first-letter {
-    /* color: #000000; */
     float: left;
-    font-size: 3em;
-    margin: 0 .1em 0 0;
+    font-size: 55px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
     line-height: 0.85;
+    color: crimson;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     footer {
        display: none;
     }

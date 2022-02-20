@@ -40,12 +40,13 @@ function parameter(arr){
 }
 
 function parseArray(){
-    var itter = prompt('How many words would you like to enter? (whole number)') 
+    let selectedElement  = document.getElementById("sortedArr")
+    var itter = prompt('How many words would you like to enter?') 
     var arr = []   
     for (let i = 0; i < itter; i++) {
         arr.push(prompt('Enter word #' + (i+1).toString()))
         }
-    alert('Your words sorted: ' + arr.sort().join(', '))
+    selectedElement.innerText = 'Your words: ' + arr.join(', ') + '\n Your words sorted: ' + arr.sort().join(', ')
 
 }
 
