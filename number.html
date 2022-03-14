@@ -7,23 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="node_modules/howler/dist/howler.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js/sampleJS.js"></script>
-    <script src="js/loadTextList.js"></script>
+    <script src="js/number.js"></script>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
-   
 
-    <title>Cluster Tool</title>
+    <title>Number Guesser</title>
 </head>
 
-<body onload="mapLoad2(),s()">
+<body onload="s(),guess()">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -47,35 +42,43 @@
         <div class="p-3">
             <center>
                 <h3>
-                    LISA
-                    <small class="text-muted">Local Spatial Autocorrelation</small>
+                    Number Guesser
+                    <small class="text-muted">This bot can identify any number you pick between 1-100 in seven guesses
+                        or less</small>
                 </h3>
 
             </center>
         </div>
 
-
-        <div class="p-5" style="background-color: #317df6">
-
+        <div class="p-2" style="background-color: #317df6">
             <center>
-                <div class="p-5 h3" style="color: aliceblue;">Example: Chicago Population Growth Heatmap</div>
-                <div id='map2'></div>
-                <div class='map-overlay' id='legend'></div>
-            </center>
-
-        </div>
-
-        <div class="p-3" style="background-color: orange">
-            <center>
-
-                <div class="h3" style="color: white;">
-                    Interactive tool underconstruction! Run alpha app here <a href="https://colab.research.google.com/drive/1aVeXy9xaNL15SuGnFuUWBa8pUQg_ev3I?usp=sharing
-        ">here</a>
+                <div class="h1" style="color: aliceblue;"> Is your number: 
+                    <div id = g> </div>
+                
                 </div>
+
+                <button type="button" class="btn btn-danger" onclick="higher()" >Higher</button>
+                <button type="button" class="btn btn-danger" onclick="lower()">Lower</button>
+                <center>
+                    <div class="p-2">
+                        <button type="button" class="btn btn-success" onclick="reset()">You got it!</button>
+                    </div>
+                </center>
             </center>
         </div>
+
+        <div class="p-5" style="background-color: green">
+            <center>
+                <div class="h1" style="color: aliceblue;" id="a"></div>
+            </center>
+        </div>
+
+
+
+
+
         <div class='footer-container'>
-            <footer class="footer bottom mt-auto bg-light">
+            <footer class="footer fixed-bottom mt-auto bg-light">
                 <div class="container p-2">
                     <div class="row">
                         <div class="col-lg-3 mt-3">
@@ -88,8 +91,10 @@
                 </div>
             </footer>
         </div>
-
     </div>
+
+
+
 </body>
 
 </html>
