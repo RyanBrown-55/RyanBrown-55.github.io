@@ -1,54 +1,7 @@
-p::first-letter {
-    float: left;
-    font-size: 55px;
-    padding-top: 2px;
-    padding-right: 4px;
-    padding-left: 4px;
-    line-height: 0.85;
-    color: crimson;
-  }
-
-  @media screen and (max-width: 400px) {
-    footer {
-       display: none;
-    }
- }
-
- .map-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #fff;
-  margin-right: 20px;
-  font-family: Arial, sans-serif;
-  overflow: auto;
-  border-radius: 3px;
+.container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
 }
 
-
- #map {
-   height: 400px;
-   width: 100%;
- }
-
- #map2 {
-  height: 600px;
-  width: 100%;
-}
-
- #legend {
-  padding: 10px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  line-height: 18px;
-  height: 150px;
-  margin-bottom: 40px;
-  width: 300px;
-}
-
-.legend-key {
-  display: inline-block;
-  border-radius: 20%;
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-}

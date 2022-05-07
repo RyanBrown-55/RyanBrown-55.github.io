@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "howler": "^2.2.3"
+    "plotly.js-dist": "^2.12.0"
   }
 }
