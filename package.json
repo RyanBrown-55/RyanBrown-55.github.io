@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "pg": "^8.7.3",
     "plotly.js-dist": "^2.12.0"
   }
 }
